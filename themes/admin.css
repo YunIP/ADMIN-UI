@@ -1,0 +1,237 @@
+@charset "utf-8";
+/*login*/
+#mainheight {
+background-image:url("./login.png");
+background-repeat:no-repeat;
+background-position:50% 50%;
+}
+.main .title {
+float:left;
+color:#555;
+width:100%;
+height:40px;
+line-height:40px;
+font-weight:bold;
+font-size: 22px;
+border-style: solid;
+border-width: 0 0 1px 0;
+border-color: #ddd;
+background-color:#eee;
+}
+.main .title .logo {
+float:left;
+width:160px;
+height:40px;
+background-image:url("./logo.png");
+background-repeat:no-repeat;
+background-position:50% 50%;
+}
+.main .loginlogo {
+float:left;
+width:145px;
+height:145px;
+background-image:url("./loginlogo.png");
+background-repeat:no-repeat;
+background-position:50% 50%;
+}
+.main .login {
+float:left;
+width:255px;
+background-color:#fafafa;
+}
+.main .login .ul {
+float:left;
+padding:10px;
+margin:0;
+border-style: solid;
+border-width: 0 0 0 1px;
+border-color: #ddd;
+}
+.main .login .ul .li {
+float:left;
+width:100%;
+height:40px;
+line-height:40px;
+}
+.main .login .ul .li .username {
+float:left;
+margin:5px 0;
+padding:3px 5px;
+width:220px;
+height:22px;
+line-height:22px;
+background-color:#fff;
+border-style: solid;
+border-width: 1px;
+border-color: #ddd;
+}
+.main .login .ul .li .password {
+float:left;
+margin:5px 0;
+padding:3px 5px;
+width:220px;
+height:22px;
+line-height:22px;
+background-color:#fff;
+border-style: solid;
+border-width: 1px;
+border-color: #ddd;
+}
+.main .login .ul .li .captcha {
+float:left;
+margin:5px 0;
+padding:3px 5px;
+width:100px;
+height:22px;
+line-height:22px;
+background-color:#fff;
+border-style: solid;
+border-width: 1px;
+border-color: #ddd;
+}
+.main .login .ul .li .captchaImg {
+float:left;
+margin:5px 0;
+padding:0;
+width:100px;
+height:30px;
+cursor:pointer;
+}
+.main .login .ul .li .captchaImg img {
+float:left;
+border:0;
+margin:0;
+padding:0;
+width:100px;
+height:30px;
+cursor:pointer;
+}
+/* loginfooter*/
+.loginfooter {
+float:left;
+width:100%;
+height:30px;
+line-height:30px;
+color:#666;
+text-align:center;
+background-color:#ddd;
+}
+/*ui-layout-north*/
+.ui-layout-north {
+border:0 !important;
+padding:0 !important;
+border-bottom:1px solid #BBB !important;
+}
+.ui-layout-north .header {
+width:100%;
+height:40px;
+overflow: hidden;
+background-color:#eee;
+}
+.ui-layout-north .logo {
+float:left;
+width:193px;
+height:40px;
+}
+.ui-layout-north .logo .ul {
+padding:0;
+margin:0;
+}
+.ui-layout-north .logo .ul .li {
+float:left;
+width:160px;
+height:40px;
+background-image:url("./logo.png");
+background-repeat:no-repeat;
+background-position:50% 50%;
+}
+.ui-layout-north .navbar {
+float:left;
+height:40px;
+}
+.ui-layout-north .navbar .ul {
+padding:0;
+margin:0;
+}
+.ui-layout-north .navbar .ul .li {
+float:left;
+height:40px;
+line-height:40px;
+font-size:14px;
+padding:0 17px 0 18px;
+}
+.ui-layout-north .navbar .ul .on {
+font-weight:bold;
+background-color:#fff;
+}
+.ui-layout-north .setting {
+float:right;
+}
+.ui-layout-north .setting .user {
+float:left;
+height:40px;
+}
+.ui-layout-north .setting .user .ul .li {
+float:left;
+height:40px;
+line-height:40px;
+margin-right:10px;
+}
+/*ui-layout-west*/
+.ui-layout-west {
+border:0 !important;
+padding:3px 2px 2px 2px !important;
+border-right:1px solid #BBB !important;
+z-index:999 !important;
+overflow:visible !important;
+background-color:#eee !important;
+}
+.ui-layout-west .accordion .ui-menu {
+width:100%;
+overflow:hidden;
+}
+/*ui-layout-center*/
+.ui-layout-center {
+border-top:0 !important;
+padding:0 !important;
+}
+.ui-layout-center .maintabs {
+width:100%;
+height:100%;
+border:0;
+}
+/*ui-layout-east*/
+.ui-layout-east {
+border:0 !important;
+padding:2px !important;
+background-color:#fafafa !important;
+}
+.ui-layout-east .search {
+padding:0;
+margin:0;
+width:204px;
+height:24px;
+overflow: hidden;
+border:1px solid #BBB !important;
+}
+.ui-layout-east .search_i {
+float:left;
+padding:2px;
+margin:0;
+border:0;
+width:140px;
+height:20px;
+line-height:20px;
+background-color:#fff;
+}
+.ui-layout-east .search_s {
+float:left;
+padding:0;
+margin:0;
+border:0;
+color:#fff;
+width:60px;
+height:24px;
+line-height:24px;
+background-color:#007fff;
+}

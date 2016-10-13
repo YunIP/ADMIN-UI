@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>后台主页 - 营销平台</title>
+<link rel="stylesheet" href="./themes/base.css">
+<link rel="stylesheet" href="./themes/admin.css">
+<link rel="stylesheet" href="./themes/base/jquery.ui.css">
+<script type="text/javascript" src="./ui/jquery.min.js"></script>
+<script type="text/javascript" src="./ui/jquery.ui.js"></script>
+<script type="text/javascript" src="./ui/layout.min.js"></script>
+<script type="text/javascript" src="./editor/xheditor.min.js"></script>
+<script type="text/javascript" src="./editor/zh-cn.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+$(".body-layout").layout({applyDefaultStyles:true,resizable:false,togglerTip_open:"\u6536\u8d77\u4fa7\u680f",togglerTip_closed:"\u5c55\u5f00\u4fa7\u680f",east__closable:false,north__spacing_open:0,east__spacing_open:0,west__size:186,east__size:210});
+$(".accordion").accordion({heightStyle:"content",icons:{header:"ui-icon-folder-collapsed",activeHeader: "ui-icon-folder-open"}});
+$(".menu").menu();
+$(".datepicker").datepicker();
+$("#dialog").dialog({autoOpen:false,resizable:false,width:206});
+//$("#dialog").dialog({autoOpen:false,resizable:false,draggable:false,width:226,modal:true});
+$("#opendialog").click(function(){$("#dialog").dialog("open");return false});
+$("#about").dialog({autoOpen:false,show:"fade",hide:"fade",resizable:false,width:206});
+$("#openabout").click(function(){$("#about").dialog("open");return false});
+$("#maintabs").tabs();
+$(".delay").delay(500).fadeToggle("slow");
+});
+</script>
+</head>
+<body class="body-layout">
+
+
+<div class="ui-layout-north"><!--[.ui-layout-north]-->
+<div class="header"><!--[.header]-->
+
+<div class="setting">
+<div class="user">
+<ul class="ul">
+<li class="li"><a href="#">admin(管理员)</a></li>
+<li class="li"><a href="#" id="opendialog">消息</a></li>
+<li class="li"><a href="#">设置</a></li>
+</ul>
+</div>
+</div>
+
+<div class="logo">
+<ul class="ul">
+<li class="li"></li>
+</ul>
+</div>
+
+<div class="navbar">
+<ul class="ul">
+<li class="li on"><a href="#" class="b">首页</a></li>
+<li class="li"><a href="#" class="b">发布信息</a></li>
+<li class="li"><a href="#" class="b">数据分析</a></li>
+<li class="li"><a href="./kcfinder" class="b">文件管理</a></li>
+</ul>
+</div>
+
+</div><!--[end .header]-->
+</div><!--[end .ui-layout-north]-->
+
+
+
+<div class="ui-layout-west"><!--[.ui-layout-west]-->
+<div class="delay"><!--[.delay]-->
+<div class="accordion"><!--[.accordion]-->
+
+
+<h3>菜单一</h3>
+<div class="menu-main"><!--[.menu-main]-->
+<ul class="ul bs0 menu">
+
+<li class="li">
+<a href="#">菜单111</a>
+<ul class="ul">
+<li class="li"><a href="#">子菜单11111</a></li>
+<li class="li"><a href="#">子菜单22222</a></li>
+<li class="li"><a href="#">子菜单33333</a></li>
+<li class="li"><a href="#">子菜单44444</a></li>
+</ul>
+</li>
+
+<li class="li">
+<a href="#">菜单222</a>
+<ul class="ul">
+<li class="li"><a href="#">子菜单11111</a></li>
+<li class="li"><a href="#">子菜单22222</a></li>
+<li class="li"><a href="#">子菜单33333</a></li>
+<li class="li"><a href="#">子菜单44444</a></li>
+</ul>
+</li>
+
+<li class="li">
+<a href="#">菜单333</a>
+<ul class="ul">
+<li class="li"><a href="#">子菜单11111</a></li>
+<li class="li"><a href="#">子菜单22222</a></li>
+<li class="li"><a href="#">子菜单33333</a></li>
+<li class="li"><a href="#">子菜单44444</a></li>
+</ul>
+</li>
+
+<li class="li">
+<a href="#">菜单444</a>
+</li>
+
+<li class="li">
+<a href="#">菜单555</a>
+<ul class="ul">
+<li class="li"><a href="#">子菜单11111</a></li>
+<li class="li"><a href="#">子菜单22222</a></li>
+<li class="li"><a href="#">子菜单33333</a></li>
+<li class="li"><a href="#">子菜单44444</a></li>
+</ul>
+</li>
+
+</ul>
+</div><!--[end .menu-main]-->
+
+
+
+<h3>菜单二</h3>
+<div class="menu-main"><!--[.menu-main]-->
+<ul class="ul bs0 menu">
+
+<li class="li">
+<a href="#">菜单111</a>
+<ul class="ul">
+<li class="li"><a href="#">子菜单11111</a></li>
+<li class="li"><a href="#">子菜单22222</a></li>
+<li class="li"><a href="#">子菜单33333</a></li>
+<li class="li"><a href="#">子菜单44444</a></li>
+</ul>
+</li>
+
+<li class="li">
+<a href="#">菜单222</a>
+<ul class="ul">
+<li class="li"><a href="#">子菜单11111</a></li>
+<li class="li"><a href="#">子菜单22222</a></li>
+<li class="li"><a href="#">子菜单33333</a></li>
+<li class="li"><a href="#">子菜单44444</a></li>
+</ul>
+</li>
+
+<li class="li">
+<a href="#">菜单333</a>
+<ul class="ul">
+<li class="li"><a href="#">子菜单11111</a></li>
+<li class="li"><a href="#">子菜单22222</a></li>
+<li class="li"><a href="#">子菜单33333</a></li>
+<li class="li"><a href="#">子菜单44444</a></li>
+</ul>
+</li>
+
+<li class="li">
+<a href="#">菜单444</a>
+<ul class="ul">
+<li class="li"><a href="#">子菜单11111</a></li>
+<li class="li"><a href="#">子菜单22222</a></li>
+<li class="li"><a href="#">子菜单33333</a></li>
+<li class="li"><a href="#">子菜单44444</a></li>
+</ul>
+</li>
+
+<li class="li">
+<a href="#">菜单555</a>
+<ul class="ul">
+<li class="li"><a href="#">子菜单11111</a></li>
+<li class="li"><a href="#">子菜单22222</a></li>
+<li class="li"><a href="#">子菜单33333</a></li>
+<li class="li"><a href="#">子菜单44444</a></li>
+</ul>
+</li>
+
+</ul>
+</div><!--[end .menu-main]-->
+
+
+<h3>菜单三</h3>
+<div class="menu-main"><!--[.menu-main]-->
+<ul class="ul bs0 menu">
+
+<li class="li">
+<a href="#">菜单111</a>
+<ul class="ul">
+<li class="li"><a href="#">子菜单11111</a></li>
+<li class="li"><a href="#">子菜单22222</a></li>
+<li class="li"><a href="#">子菜单33333</a></li>
+<li class="li"><a href="#">子菜单44444</a></li>
+</ul>
+</li>
+
+<li class="li">
+<a href="#">菜单222</a>
+<ul class="ul">
+<li class="li"><a href="#">子菜单11111</a></li>
+<li class="li"><a href="#">子菜单22222</a></li>
+<li class="li"><a href="#">子菜单33333</a></li>
+<li class="li"><a href="#">子菜单44444</a></li>
+</ul>
+</li>
+
+<li class="li">
+<a href="#">菜单333</a>
+<ul class="ul">
+<li class="li"><a href="#">子菜单11111</a></li>
+<li class="li"><a href="#">子菜单22222</a></li>
+<li class="li"><a href="#">子菜单33333</a></li>
+<li class="li"><a href="#">子菜单44444</a></li>
+</ul>
+</li>
+
+<li class="li">
+<a href="#">菜单444</a>
+<ul class="ul">
+<li class="li"><a href="#">子菜单11111</a></li>
+<li class="li"><a href="#">子菜单22222</a></li>
+<li class="li"><a href="#">子菜单33333</a></li>
+<li class="li"><a href="#">子菜单44444</a></li>
+</ul>
+</li>
+
+<li class="li">
+<a href="#">菜单555</a>
+<ul class="ul">
+<li class="li"><a href="#">子菜单11111</a></li>
+<li class="li"><a href="#">子菜单22222</a></li>
+<li class="li"><a href="#">子菜单33333</a></li>
+<li class="li"><a href="#">子菜单44444</a></li>
+</ul>
+</li>
+
+</ul>
+</div><!--[end .menu-main]-->
+
+</div><!--[end .accordion]-->
+</div><!--[den .delay]-->
+</div><!--[end .ui-layout-west]-->
+
+
+
+<div class="ui-layout-center"><!--[.ui-layout-center]-->
+<div class="delay"><!--[.delay]-->
+<div class="maintabs" id="maintabs">
+<ul class="ul">
+<li class="li"><a href="#home"><span class="ui-icon ui-icon-home fl"></span>主页</a></li>
+<li class="li"><a href="#home2"><span class="ui-icon ui-icon-tag fl"></span>发布信息</a></li>
+</ul>
+<div id="home">
+主页
+</div>
+<div id="home2">
+<textarea id="elm4" name="elm4" class="xheditor-mfull" rows="12" cols="100" style="width:100%"></textarea>
+</div>
+</div>
+</div><!--[den .delay]-->
+</div><!--[end .ui-layout-center]-->
+
+
+
+<div class="ui-layout-east"><!--[.ui-layout-east]-->
+<div class="delay"><!--[.delay]-->
+<div class="search">
+<input type="text" name="shou" class="search_i">
+<input type="submit" value="Search" class="search_s"/>
+</div>
+<div class="mt3">
+<div class="datepicker"></div>
+</div>
+<div class="mt5">
+<textarea id="elm4" name="elm4" class="xheditor-mfull" rows="12" cols="100" style="width:100%"></textarea>
+</div>
+</div><!--[den .delay]-->
+</div><!--[end .ui-layout-east]-->
+
+
+
+<div class="delay"><!--[.delay]-->
+<div id="dialog" title="在线日历">
+<div class="datepicker"></div>
+</div>
+</div><!--[den .delay]-->
+
+</body>
+</html>
