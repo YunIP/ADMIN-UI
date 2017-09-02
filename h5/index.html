@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="css/swiper.min.css"/>
 <link rel="stylesheet" href="css/animate.min.css"/>
 <link rel="stylesheet" href="css/video-js.min.css"/>
-<link rel="stylesheet" href="image/jplayer/skin/css/jplayer.min.css"/>
+<link rel="stylesheet" href="jplayer/skin/css/jplayer.css"/>
 </head>
 <body>
 <style type="text/css">
@@ -86,6 +86,19 @@ background-image: url('image/pause.png');
 
 <div class="swiper-slide" style="background:#EEE">
 <div class="ani" style="width:150px;height:110px;left:470px;top:185px;z-index:3;" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s">我要准备开始了</div>
+
+<!-- H5音乐 -->
+<div id="jpmusic" class="jp-audio" role="application" aria-label="media player">
+<div id="music" class="jp-jplayer"></div>
+<div class="jp-type-single">
+<div class="jp-gui jp-interface">
+<div class="jp-controls">
+<button class="jp-play" role="button" tabindex="0">play</button>
+</div>
+</div>
+</div>
+</div>
+<!-- H5音乐 End-->
 </div>
 
 <div class="swiper-slide" style="background:#900">
@@ -117,9 +130,9 @@ background-image: url('image/pause.png');
 
 <div class="swiper-slide" style="background:#600">
 <!-- H5视频 -->
-<div id="jp_container_1" class="jp-video jp-video-360p" role="application" aria-label="media player">
+<div id="jpvideo" class="jp-video jp-video-270p" role="application" aria-label="media player">
+<div id="video" class="jp-jplayer"></div>
 <div class="jp-type-single">
-<div id="jquery_jplayer_1" class="jp-jplayer"></div>
 <div class="jp-gui">
 <div class="jp-video-play">
 <button class="jp-video-play-icon" role="button" tabindex="0">play</button>
@@ -153,6 +166,7 @@ background-image: url('image/pause.png');
 </div>
 </div>
 </div>
+<!-- H5视频 End-->
 </div>
 
 </div>
@@ -161,19 +175,11 @@ background-image: url('image/pause.png');
 <!-- 向上退 -->
 <div class="swiper-button-prev"><div id="audiobtn"><span id="playbtn" class="play"></span></div></div>
 </div>
-<!-- H5音乐 -->
-<div id="jquery_jplayer_1" class="jp-jplayer"></div>
-<div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
-<div class="jp-gui jp-interface">
-<div class="jp-controls">
-<button class="jp-play" role="button" tabindex="0">play</button>
-</div>
-</div>
-</div>
+
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/swiper.min.js"></script>
 <script type="text/javascript" src="js/animate.min.js"></script>
-<script type="text/javascript" src="image/jplayer/jplayer.min.js"></script>
+<script type="text/javascript" src="jplayer/jplayer.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function() {
 scaleW = window.innerWidth / 320;
@@ -219,10 +225,13 @@ swiperAnimate(swiper);
 });
 });
 </script>
+
 <script type='text/javascript'>
-// 音乐播放器
+// 播放器
 $(document).ready(function() {
-ready: function () {
+// music
+$("#music").jPlayer({
+ready: function() {
 $(this).jPlayer("setMedia", {
 mp3: "image/music.mp3"
 }).jPlayer("play");
@@ -232,50 +241,32 @@ $(this).jPlayer("play");
 },
 swfPath: "jplayer",
 supplied: "mp3",
-wmode: "window",
+cssSelectorAncestor: "#jpmusic",
+globalVolume: true,
 useStateClassSkin: true,
 autoBlur: false,
 smoothPlayBar: true,
-keyEnabled: true,
-remainingDuration: true,
-toggleDuration: true
+keyEnabled: true
 });
-});
-</script>
-<script type='text/javascript'>
-// 旋转插件
-$(document).ready(function() {
-var angle = 0;
-setInterval(function() {
-angle += 5;
-$('.play').rotate(angle);
-},
-50);
-});
-</script>
-<script type='text/javascript'>
-// 视频播放器
-$(document).ready(function() {
-$("#jquery_jplayer_1").jPlayer({
+// video
+$("#video").jPlayer({
 ready: function() {
 $(this).jPlayer("setMedia", {
-m4v: "image/video.m4v",
-poster: "video.logo.png"
+/*poster: "image/video.logo.png",*/
+m4v: "image/video.m4v"
 });
+},
+ended: function() {
+$(this).jPlayer("play");
 },
 swfPath: "jplayer",
 supplied: "webmv, ogv, m4v",
-size: {
-width: "640px",
-height: "360px",
-cssClass: "jp-video-360p"
-},
+cssSelectorAncestor: "#jpvideo",
+globalVolume: true,
 useStateClassSkin: true,
 autoBlur: false,
 smoothPlayBar: true,
-keyEnabled: true,
-remainingDuration: true,
-toggleDuration: true
+keyEnabled: true
 });
 });
 </script>
