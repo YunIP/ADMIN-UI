@@ -1,22 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
-<title>欢迎来到次世元</title>
-<!-- Path to Framework7 Library CSS-->
-<link rel="stylesheet" href="f7/css/framework7.min.css">
-<link rel="stylesheet" href="f7/css/framework7.colors.min.css">
-<!-- Path to your custom app styles-->
-<link rel="stylesheet" href="f7/css/my-app.css">
-
-<!-- Path to Swiper styles-->
+<meta charset="utf-8"/>
+<title>Swiper</title>
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 <link rel="stylesheet" href="css/swiper.min.css"/>
 <link rel="stylesheet" href="css/animate.min.css"/>
 <link rel="stylesheet" href="css/video-js.min.css"/>
 <link rel="stylesheet" href="jplayer/skin/css/jplayer.css"/>
+</head>
+<body>
 <style type="text/css">
 html, body {
 position: relative;
@@ -85,60 +81,36 @@ height: 24px;
 background-image: url('image/pause.png');
 }
 </style>
-</head>
-<body>
-<!-- Status bar overlay for fullscreen mode-->
-<div class="statusbar-overlay"></div>
-<!-- Panels overlay-->
-<div class="panel-overlay"></div>
-<!-- Left panel with reveal effect-->
-<div class="panel panel-left panel-reveal">
-<div class="content-block">
-<p>Left panel content goes here</p>
-</div>
-</div>
-<!-- Right panel with cover effect-->
-<div class="panel panel-right panel-cover">
-<div class="content-block">
-<p>Right panel content goes here</p>
-</div>
-</div>
-<!-- Views-->
-<div class="views">
-<!-- Your main view, should have "view-main" class-->
-<div class="view view-main">
-<!-- Top Navbar-->
-<div class="navbar">
-<div class="navbar-inner">
-<!-- We have home navbar without left link-->
-<div class="center sliding">欢迎来到次世元</div>
-<div class="right">
+<div class="swiper-container">
+<div class="swiper-wrapper">
+
+<div class="swiper-slide" style="background:#EEE">
+<div class="ani" style="width:150px;height:110px;left:470px;top:185px;z-index:3;" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s">我要准备开始了</div>
+
 <!-- H5音乐 -->
 <div id="jpmusic" class="jp-audio" role="application" aria-label="media player">
 <div id="music" class="jp-jplayer"></div>
 <div class="jp-type-single">
 <div class="jp-gui jp-interface">
 <div class="jp-controls">
-<button class="jp-play" role="button" tabindex="0">播放音乐</button>
+<button class="jp-play" role="button" tabindex="0">play</button>
 </div>
 </div>
 </div>
 </div>
 <!-- H5音乐 End-->
 </div>
-</div>
-</div>
-
-
-<!-- swiper -->
-<div class="swiper-container">
-<div class="swiper-wrapper">
-
-<div class="swiper-slide" style="background:#EEE">
-<div class="ani" style="width:150px;height:110px;left:470px;top:185px;z-index:3;" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s">我要准备开始了</div>
-</div>
 
 <div class="swiper-slide" style="background:#900">
+<div class="ani" style="width:150px;height:110px;left:170px;top:185px;z-index:3;" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s" swiper-animate-delay="1.5s">
+<p style="width:15px;color:#b60927; display:inline-block; font-size:90%; line-height:1; margin-right:10px;">愿您羊年运旺福旺</p>
+<p style="width:15px;color:#b60927; display:inline-block; font-size:90%; line-height:1; margin-right:10px;">条条祝福给您送上</p>
+<p style="width:15px;color:#b60927; display:inline-block; font-size:90%; line-height:1; margin-right:10px;">美丽花灯传递吉祥</p>
+<p style="width:15px;color:#b60927; display:inline-block; font-size:90%; line-height:1; margin-right:10px;">圆圆汤圆味道芬芳</p>
+</div>
+</div>
+
+<div class="swiper-slide" style="background:#800">
 <div class="ani" style="width:150px;height:110px;left:170px;top:185px;z-index:3;" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s" swiper-animate-delay="1.5s">
 <p style="width:15px;color:#b60927; display:inline-block; font-size:90%; line-height:1; margin-right:10px;">愿您羊年运旺福旺</p>
 <p style="width:15px;color:#b60927; display:inline-block; font-size:90%; line-height:1; margin-right:10px;">条条祝福给您送上</p>
@@ -156,16 +128,7 @@ background-image: url('image/pause.png');
 </div>
 </div>
 
-<div class="swiper-slide" style="background:#500">
-<div class="ani" style="width:150px;height:110px;left:170px;top:185px;z-index:3;" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s" swiper-animate-delay="1.5s">
-<p style="width:15px;color:#b60927; display:inline-block; font-size:90%; line-height:1; margin-right:10px;">愿您羊年运旺福旺</p>
-<p style="width:15px;color:#b60927; display:inline-block; font-size:90%; line-height:1; margin-right:10px;">条条祝福给您送上</p>
-<p style="width:15px;color:#b60927; display:inline-block; font-size:90%; line-height:1; margin-right:10px;">美丽花灯传递吉祥</p>
-<p style="width:15px;color:#b60927; display:inline-block; font-size:90%; line-height:1; margin-right:10px;">圆圆汤圆味道芬芳</p>
-</div>
-</div>
-
-<div class="swiper-slide" style="background:#300">
+<div class="swiper-slide" style="background:#600">
 <!-- H5视频 -->
 <div id="jpvideo" class="jp-video jp-video-270p" role="application" aria-label="media player">
 <div id="video" class="jp-jplayer"></div>
@@ -212,24 +175,7 @@ background-image: url('image/pause.png');
 <!-- 向上退 -->
 <div class="swiper-button-prev"><div id="audiobtn"><span id="playbtn" class="play"></span></div></div>
 </div>
-<!-- Swiper end-->
 
-
-
-<!-- Bottom Toolbar-->
-<div class="toolbar">
-<div class="toolbar-inner">
-<a href="#" data-panel="left" class="link icon-only open-panel"><i class="icon icon-bars"></i></a>
-<a href="#" data-panel="right" class="link icon-only open-panel"><i class="icon icon-bars"></i></a>
-</div>
-</div>
-</div>
-</div>
-<!-- Path to Framework7 Library JS-->
-<script type="text/javascript" src="f7/js/framework7.min.js"></script>
-<!-- Path to your app js-->
-<script type="text/javascript" src="f7/js/my-app.js"></script>
-<!-- Path to Swiper js-->
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/swiper.min.js"></script>
 <script type="text/javascript" src="js/animate.min.js"></script>

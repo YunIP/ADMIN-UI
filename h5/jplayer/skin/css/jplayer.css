@@ -8,7 +8,7 @@
 	font-family: Verdana, Arial, sans-serif;
 	line-height: 1.2;
 	border: 0;
-	background-color: 0;
+	background-color: transparent;
 }
 
 #jpmusic.jp-audio {
@@ -17,6 +17,7 @@
 
 #jpmusic.jp-audio .jp-interface {
 	height: 32px;
+	background-color: transparent;
 }
 
 #jpmusic .jp-controls-holder {
