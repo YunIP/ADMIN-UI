@@ -1,97 +1,20 @@
-<!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8"/>
-<title>登陆后台 - 营销平台</title>
-<link rel="stylesheet" href="./themes/base.css">
-<link rel="stylesheet" href="./themes/admin.css">
-<link rel="stylesheet" href="./themes/base/jquery.ui.css">
-<script type="text/javascript" src="./ui/jquery.min.js"></script>
-<script type="text/javascript" src="./ui/jquery.ui.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){
-$("#cookietime").button();
-$("#radio").buttonset();
-$("#main").dialog({
-draggable:false,
-resizable:false,
-modal:true,
-width:400,
-show:"fade",
-closeOnEscape:false,
-open:function(event,ui){$(".ui-dialog-titlebar").hide();}
-});
-$(".button").button()
-.click(function(event){
-event.preventDefault();
-});
-});
-
-$(document).ready(function(){
-var $mainheight = $("#mainheight");
-$mainheight.height($(window).height()-30);
-$(window).resize(function(){
-$(window).unbind("onresize");
-$mainheight.height($(window).height()-30);
-$(window).bind("onresize", this);
-});
-$spectrum();
-function $spectrum(){
-var $color = $("#mainheight");
-var $rgba = "rgba("+Math.floor(Math.random()*256)+","+Math.floor(Math.random()*256)+","+Math.floor(Math.random()*256)+")";
-$color.animate({backgroundColor:$rgba},3e3);
-$spectrum();
-};
-});
-</script>
+<title>商务直播测试项目</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
 </head>
 <body>
-<div id="mainheight"><!--[#mainheight]-->
-<div class="main" id="main"><!--[.main]-->
-<div class="title"><span class="logo"></span>SEO营销平台<span class="fwn fs12">(v.3)</span></div>
-<div class="loginlogo"><!--[.loginlogo]-->
-</div><!--[end .loginlogo]-->
-
-<div class="login"><!--[.login]-->
-<form id="form">
-<ul class="ul">
-
-<li class="li">
-<input type="text" name="username" class="username" placeholder="登陆帐号">
-</li>
-
-<li class="li">
-<input type="text" name="password" class="password" placeholder="登陆密码">
-</li>
-
-<li class="li">
-<input type="text" name="captcha" class="captcha" placeholder="验证码">
-<span class="captchaImg"><img src="./themes/get_img.jpg"/></span>
-</li>
-
-<li class="li" id="radio">
-<input type="checkbox" name="cookietime" value="1" id="cookietime" checked/><label for="cookietime">记住登陆记录</label>
-<input type="radio" id="radio2" name="radio"/><label for="radio2">英文</label>
-<input type="radio" id="radio1" name="radio" checked="checked"/><label for="radio1">中文</label>
-</li>
-
-<li class="li">
-<input type="submit" value="登陆管理中心" class="button"/>
-<input type="reset" value="返回网站首页" class="button"/>
-</li>
-
-</ul>
-</form>
-</div><!--[end .login]-->
-</div><!--[end .main]-->
-</div><!--[end #mainheight]-->
-
-
-<div class="loginfooter"><!--[.loginfooter]-->
-<ul class="ul">
-<li class="li">2016&#174;北京科技公司版权所有</li>
-</ul>
-</div><!--[end .loginfooter]-->
-
+<style type="text/css">
+*{
+margin:0;
+padding:0;
+border:0;
+}
+</style>
+<iframe src="http://e.vhall.com/webinar/inituser/505591322" width="100%" height="100%" frameborder="no" border="0" scrolling="no" allowtransparency="yes"></iframe>
 </body>
 </html>
